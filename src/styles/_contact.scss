@@ -1,0 +1,61 @@
+.ContactPage {
+    .contact-section-main {
+        margin-top: 2.5rem;
+        display: flex;
+
+        .map-section {
+            height: 100%;
+            padding: 1rem;
+            background-color: #191d2b;
+            border-radius: 10px;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+.ContactItem {
+    margin: 0 1rem;
+
+    .contact {
+        background-color: #191d2b;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        border-left: 1px solid #2e344e;
+        border-top: 8px solid #2e344e;
+        border-right: 1px solid #2e344e;
+        border-bottom: 1px solid #2e344e;
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            border-top: 8px solid #037fff;
+        }
+
+        img {
+            width: 18%;
+            margin-left: 0.5rem;
+            padding: 0.5rem;
+            border: 1px solid #2e344e;
+            border-radius: 5px;
+        }
+
+        .right-items {
+            margin: 2rem;
+
+            h6 {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1rem;
+                padding-top: 0.5rem;
+            }
+        }
+    }
+}
