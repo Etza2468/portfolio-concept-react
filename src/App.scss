@@ -5,6 +5,9 @@
 @import "./styles/about";
 @import "./styles/skill";
 @import "./styles/services";
+@import "./styles/portfolios";
+@import "./styles/blogs";
+@import "./styles/contact";
 
 * {
     padding: 0;
@@ -33,4 +36,10 @@ body {
 
 span {
     color: #037fff;
+}
+
+@media screen and (max-width: 510px) {
+    html {
+        font-size: 70%;
+    }
 }
