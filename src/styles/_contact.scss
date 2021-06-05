@@ -8,6 +8,12 @@
             padding: 1rem;
             background-color: #191d2b;
             border-radius: 10px;
+
+            iframe {
+                @media screen and (max-width: 1380px) {
+                    width: 100%;
+                }
+            }
         }
 
         .contact-section {
@@ -15,6 +21,22 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @media screen and (max-width: 1380px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            @media screen and (max-width: 915px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 1380px) {
+            flex-direction: column;
         }
     }
 }
@@ -39,7 +61,6 @@
 
         img {
             margin-left: 0.5rem;
-            padding: 0.5rem;
             border: 1px solid #2e344e;
             border-radius: 5px;
         }
@@ -57,5 +78,9 @@
                 padding-top: 0.5rem;
             }
         }
+    }
+
+    @media screen and (max-width: 1380px) {
+        margin: 0;
     }
 }

@@ -19,9 +19,20 @@
         color: #fff;
         border-radius: 0.8rem;
         margin-bottom: 1.2rem;
+        transition: all 0.5s ease-in-out;
 
         &:not(:last-child) {
             margin-right: 1rem;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: #037fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 90%;
+            padding: 0.6rem 1rem;
         }
     }
 }
@@ -40,6 +51,14 @@
                 width: 100%;
                 height: 45vh;
                 object-fit: cover;
+
+                @media screen and (max-width: 950px) {
+                    height: 60vh;
+                }
+
+                @media screen and (max-width: 510px) {
+                    height: 30vh;
+                }
             }
 
             &::before {
@@ -65,7 +84,6 @@
                 top: 70%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                padding: 1rem 2rem;
                 visibility: hidden;
 
                 .icon {
@@ -103,5 +121,9 @@
                 cursor: pointer;
             }
         }
+    }
+
+    @media screen and (max-width: 950px) {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

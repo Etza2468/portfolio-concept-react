@@ -5,7 +5,7 @@ import allBlogs from "../Data/allBlogs";
 function BlogPage() {
   return (
     <div className="BlogPage">
-      <Title title={"Recent Blogs"} span={"Recent Blogs"} />
+      <Title title={"Blogs"} span={"Blogs"} />
       <div className="blog-container">
         {allBlogs.map((blog) => {
           return (
